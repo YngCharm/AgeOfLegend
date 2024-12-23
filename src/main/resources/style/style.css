@@ -1,0 +1,33 @@
+.root {
+    -fx-background-color: linear-gradient(to bottom right, #003a67, #800080);
+}
+
+@font-face {
+    font-family: "Pacifico";
+    src: url("/resources/fonts/Pacifico-Regular.ttf");
+}
+
+.label{
+    -fx-font-family: "Pacifico-Regular";
+    -fx-font-size: 48px;
+    -fx-text-fill: white;
+}
+
+.pacifico-regular {
+  font-family: "Pacifico", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.transparent-text-field {
+    -fx-font-size: 16px;
+    -fx-text-fill: white;
+    -fx-background-color: transparent; /* Прозрачный фон */
+    -fx-border-color: transparent; /* Убираем рамку */
+    -fx-padding: 0; /* Убираем отступы */
+}
+
+.line {
+    -fx-fill: white; /* Цвет линии */
+    -fx-stroke-width: 2; /* Толщина линии (если используете Line) */
+}
