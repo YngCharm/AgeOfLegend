@@ -7,8 +7,8 @@
     src: url("/resources/fonts/Pacifico-Regular.ttf");
 }
 
-.label{
-    -fx-font-family: "Pacifico-Regular";
+.label-pacifico{
+    -fx-font-family: "Pacifico";
     -fx-font-size: 48px;
     -fx-text-fill: white;
 }
@@ -23,11 +23,29 @@
     -fx-font-size: 16px;
     -fx-text-fill: white;
     -fx-background-color: transparent; /* Прозрачный фон */
-    -fx-border-color: transparent; /* Убираем рамку */
     -fx-padding: 0; /* Убираем отступы */
 }
 
-.line {
-    -fx-fill: white; /* Цвет линии */
-    -fx-stroke-width: 2; /* Толщина линии (если используете Line) */
+.combo-box {
+    -fx-background-color: rgba(255, 255, 255, 0); /* Прозрачный фон */
+    -fx-text-fill: white; /* Белый цвет текста */
 }
+
+.combo-box .list-view {
+    -fx-background-color: rgba(255, 255, 255, 0); /* Прозрачный фон выпадающего списка */
+    -fx-text-fill: black; /* Цвет текста в выпадающем списке (можно изменить) */
+}
+
+.combo-box .list-view .list-cell {
+    -fx-background-color: rgba(255, 255, 255, 0); /* Прозрачный фон ячеек списка */
+    -fx-text-fill: white; /* Цвет текста ячеек списка */
+}
+
+.combo-box .list-view .list-cell:hover {
+    -fx-background-color: rgba(255, 255, 255, 0.2); /* Полупрозрачный фон ячейки при наведении */
+}
+
+.combo-box .text-field {
+    -fx-prompt-text-fill: white; /* Белый цвет текста подсказки */
+}
+

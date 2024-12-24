@@ -5,18 +5,19 @@
 <?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.shape.Line?>
 
-<AnchorPane fx:id="rootContainer" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@../../../style/style.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ageoflegend.LoginController">
+<AnchorPane fx:id="rootContainer" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="475.0" prefWidth="700.0" stylesheets="@../../../style/style.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ageoflegend.LoginController">
    <children>
-      <Label fx:id="label" layoutX="145.0" layoutY="24.0" styleClass="label" stylesheets="@../../../style/style.css" text="Age of Legend" textFill="WHITE">
+      <Label fx:id="label" layoutX="195.0" layoutY="22.0" styleClass="label-pacifico" stylesheets="@../../../style/style.css" text="Age of Legend" textFill="WHITE">
       </Label>
 
-      <TextField fx:id="loginTF" layoutX="145.0" layoutY="143.0" prefHeight="25.0" prefWidth="311.0" promptText="login" styleClass="transparent-text-field" />
-      <Rectangle fill="white" height="2.0" layoutX="145.0" layoutY="168.0" width="311.0" />
-      <PasswordField fx:id="passwordTF" layoutX="145.0" layoutY="200.0" prefHeight="25.0" prefWidth="311.0" promptText="password" styleClass="transparent-text-field" stylesheets="@../../../style/style.css" />
-      <Rectangle fill="white" height="2.0" layoutX="145.0" layoutY="225.0" width="311.0" />
-      <Button layoutX="145.0" layoutY="264.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="91.0" text="Вход" />
+      <TextField fx:id="loginTF" layoutX="190.0" layoutY="193.0" prefHeight="25.0" prefWidth="311.0" promptText="login" styleClass="transparent-text-field" />
+      <PasswordField fx:id="passwordTF" layoutX="190.0" layoutY="250.0" prefHeight="25.0" prefWidth="311.0" promptText="password" styleClass="transparent-text-field" stylesheets="@../../../style/style.css" />
+      <Button layoutX="190.0" layoutY="314.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="91.0" text="Вход" />
+      <Label layoutX="308.0" layoutY="318.0" onMouseClicked="#labelLoginClick" text="нет аккаунта?&#10;зарегистрировать" textFill="WHITE" />
+      <Line endX="514.0" endY="167.99998474121094" layoutX="-5.0" layoutY="52.0" startX="195.0" startY="168.0" stroke="WHITE" strokeWidth="3.0" />
+      <Line endX="514.0" endY="167.99998474121094" layoutX="-6.0" layoutY="108.0" startX="195.0" startY="168.0" stroke="WHITE" strokeWidth="3.0" />
 
    </children>
 </AnchorPane>
